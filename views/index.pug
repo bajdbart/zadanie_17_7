@@ -1,0 +1,15 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title="Pug Google Login"
+        style
+            include style.css
+    body 
+        div.container
+            div.header
+                h1 Please log to your Google Account
+            form.form(action="http://localhost:3000/auth/google", method="GET")
+                button.btn(type='submit') Sign up
+            footer created by Google &copy; :)
+               
